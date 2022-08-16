@@ -46,10 +46,10 @@ app.get("/auth", (req, res) => {
   );
 });
 
-app.get("/oauth_redirect", (req, res) => {
+app.get("/oauth_redirect", async(req, res) => {
   const code = req.query["code"];
   if (code) {
-    fetch(
+    await fetch(
       getAccessToken(
         process.env.APPID,
         "http://localhost:1234/oauth_redirect",
