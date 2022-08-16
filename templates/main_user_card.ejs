@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="card">
+        <div class="imgBx">
+            <img src="<%= user.photo_max_orig %>" alt="avatar"/>
+        </div>
+        <div class="details">
+            <div class="content">
+                <h2><%= user.first_name %> <%= user.last_name  %><br>
+                    <span><%= user.bdate %></span> 
+                </h2>
+                <ul>
+                    <li><a href="/user/<%= user.id %>"><%= user.counters.friends %></a></li>
+                    <li><a href="#followers"><%= user.counters.followers %></a></li>
+                    <li><a href="#photos"><%= user.counters.photos %></a></li>
+                    <li><a href="#vk">Vk</a></li>                    
+                </ul>
+                <a href="#read more">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>

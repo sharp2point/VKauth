@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="/styles/base.css">
 </head>
 <body>
-    <h1>Hello Auth</h1>
+    <% if (auth) {%>
+        <%- include('main_user_card') %>
+    <% } else { %>
+        <%- include('vk_auth_block') %>
+    <% } %>
 </body>
 </html>
