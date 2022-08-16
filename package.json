@@ -1,0 +1,20 @@
+{
+  "name": "vkauth",
+  "version": "1.0.0",
+  "description": "Реализация авторизации в социальной сети VK\r Node.js\r Express.js",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  }
+}
