@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="/styles/base.css">
 </head>
 <body>
-    <div class="auth">
-        <a href="/vk_oauth">VK auth</a>
-    </div>
+    <% if (user) { %>
+        <%- include('main_user_card.ejs', {user:user}); %>
+    <% } else { %>
+        <div class="auth">
+            <a href="/vk_oauth">VK auth</a>
+        </div>
+    <% } %>
 </body>
 </html>

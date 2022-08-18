@@ -7,6 +7,9 @@ class OAuthModel {
     static fromJson(json) {
       return Object.assign(new OAuthModel(), json);
     }
+    static newOAuthModel(){
+      return new OAuthModel()
+    }
   }
   
   class UserModel {
@@ -24,5 +27,7 @@ class OAuthModel {
       return Object.assign(new UserModel(), json);
     }
   }
+
+  
   
   export { OAuthModel, UserModel};
