@@ -1,6 +1,3 @@
-import dotenv from "dotenv";
-dotenv.config();
-
 function authPath(client_id, redirect_uri, scope) {
   return `https://oauth.vk.com/authorize?client_id=${client_id}&display=page&redirect_uri=${redirect_uri}&scope=${scope}&response_type=code&v=5.131`;
 }

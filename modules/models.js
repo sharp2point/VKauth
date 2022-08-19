@@ -1,14 +1,17 @@
+
 class OAuthModel {
     constructor() {
       this.access_token;
       this.expires_in;
       this.user_id;
+      this.model;
     }
     static fromJson(json) {
-      return Object.assign(new OAuthModel(), json);
+      this.model = Object.assign(new OAuthModel(), json);
+      return this.model;
     }
-    static newOAuthModel(){
-      return new OAuthModel()
+    static getOAuthModel(){
+      return this.model;
     }
   }
   

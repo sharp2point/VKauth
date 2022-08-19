@@ -9,7 +9,7 @@ import { OAuthModel, UserModel } from "../modules/models.js"; //"../models.js";
 dotenv.config();
 
 //----- You VARIABLES ----//
-let oauth_model = undefined; // объект хранящий данные авторизации
+let oauth_model = OAuthModel.getOAuthModel(); // объект хранящий данные авторизации
 let user_model = undefined; // модель авторизованного пользователя
 let req_data_field = "bdate, online, photo_max_orig, sex, counters"; // запрашиваемые у VK API поля
 //------------------------//
